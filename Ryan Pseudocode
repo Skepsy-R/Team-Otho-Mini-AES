@@ -1,0 +1,130 @@
+Create method called "nibbleSub"
+	
+	Switch inputs to given numbers
+		0000 = 1110
+		0001 = 0100
+		0010 = 1101
+		0011 = 0001
+		0100 = 0010
+		0101 = 1111
+		0110 = 1011
+		0111 = 1000
+		1000 = 0011
+		1001 = 1010
+		1010 = 0110
+		1011 = 1100
+		1100 = 0101
+		1101 = 1001
+		1110 = 0000
+		1111 = 0111
+
+	Output values where required
+
+Create input String named "Key0"
+
+	get user input of Key0
+		separate Key0 into 4 different strings (string1, string2, string3, string4)
+	store Key0 as array
+
+Create empty String named "Key1"
+	
+	
+	Take string4 and use method nibbleSub
+		add string1 to nibbleSub(string4)
+			add 0001 to value
+
+	output value as string5
+
+		add string2 to string5
+		
+	output value as string6
+
+		add string3 to string6
+		
+	output value as string7
+
+		add string4 to string7
+		
+	output value as string8
+
+	output values in order as Key1
+
+Create empty String named "Key2"
+
+	Take string8 and use method nibbleSub
+		add string5 to nibbleSub(string8)
+			add 0010 to value
+	
+	output value as string 9
+
+		add string6 to string9
+		
+	output value as string10
+
+		add string7 to string10
+		
+	output value as string11
+
+		add string8 to string11
+		
+	output value as string12
+
+	output values in order as Key2
+	
+
+Retrieve input of Key0 in 4 different strings (string1, string2, string3, string4)
+Retrieve input of Key1 in 4 different strings (string5, string6, string7, string8)
+Retrieve input of Key2 in 4 different strings (string9, string10, string11, string12)
+Create empty String named "ARK0"
+Create empty String named "ARK1"
+Create empty String named "ARK2"
+
+Use method "nibbleSub"
+	
+	Create array for number matching in nibbleSub method
+
+		Loop each string of Key0 through nibbleSub array
+			get replacement values from external table class
+				replace values with nibbleSub variant
+
+
+		end loop
+
+		return new string1, string2, string3 and string4
+
+end method
+
+
+Create method called "shiftRow"
+
+		Find values of string3 and string 4 in array
+			switch value locations
+
+		return string1, string2, string3 and string4 with new locations
+
+
+Create method called "mixedColumns"
+
+
+		recieve standard values from external class
+			Multiply values from shiftRow with values from external table
+
+		recieve hexidecimal conversion values from external table
+			replace binary values with hexidecimal values
+				add hexidecimal values
+					revert hexidecimal to binary through external convertion
+
+		Output as ARK0
+
+
+		recieve ARK0
+			add ARK0 to Key1
+				Convert through nibbleSub method
+					Convert through shiftRow method
+						convert through mixedColumns method
+		Output as ARK1
+
+		recieve ARK1
+			add ARK1 to Key2
+
+Output as ARK2
